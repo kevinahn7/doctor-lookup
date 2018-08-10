@@ -5,7 +5,9 @@ body {
 
 .resultsGrid {
   display: grid;
+  grid-gap: 5px;
   grid-template-columns: repeat(4, 25%);
+  margin-top: 20px;
 }
 
 .cell {
