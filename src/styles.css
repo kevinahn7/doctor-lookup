@@ -19,9 +19,14 @@ body {
 
 .theName {
   font-weight: bold;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
+  border: lightgray 1px solid;
 }
 
 img {
   border-radius: 5%;
+}
+
+.practiceName {
+  font-size: 1.3rem;
 }

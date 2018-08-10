@@ -24,6 +24,7 @@ $(document).ready(function() {
               `<div class="cell">
                 <p><img src='${body[x].profile.image_url}'</p>
                 <p class="theName">${body[x].profile.first_name} ${body[x].profile.last_name}</p>
+                <p class="practiceName">${body[x].practices[0].name}</p>
                 <p>${body[x].practices[0].visit_address.city}</p>
                 <p>${body[x].practices[0].visit_address.street}</p>
                 <p>${body[x].practices[0].visit_address.state}</p>
@@ -39,6 +40,7 @@ $(document).ready(function() {
               `<div class="cell">
                 <p><img src='${body[x].profile.image_url}'</p>
                 <p class="theName">${body[x].profile.first_name} ${body[x].profile.last_name}</p>
+                <p class="practiceName">${body[x].practices[0].name}</p>
                 <p>${body[x].practices[0].visit_address.city}</p>
                 <p>${body[x].practices[0].visit_address.street}</p>
                 <p>${body[x].practices[0].visit_address.state}</p>
