@@ -18,12 +18,29 @@ $(document).ready(function() {
       let body = response.data;
       for (let x = 0; x < body.length; x++) {
         if (body[x].practices[0].website) {
-          $(".results").append(`<p>${body[x].profile.first_name} ${body[x].profile.last_name}</p>
-            <p><img src='${body[x].profile.image_url}'</p>
-            <p><a href="${body[x].practices[0].website}" target="_blank">${body[x].practices[0].website}<a></p>`);
+          $(".resultsGrid").append(
+            `<div>
+              <p>${body[x].profile.first_name} ${body[x].profile.last_name}</p>
+              <p><img src='${body[x].profile.image_url}'</p>
+              <p><a href="${body[x].practices[0].website}" target="_blank">${body[x].practices[0].website}<a></p>
+              <p>${body[x].practices[0].visit_address.city}</p>
+              <p>${body[x].practices[0].visit_address.street}</p>
+              <p>${body[x].practices[0].visit_address.state}</p>
+              <p>${body[x].practices[0].visit_address.zip}</p>
+            </div>`
+          );
+
         } else {
-          $(".results").append(`<p>${body[x].profile.first_name} ${body[x].profile.last_name}</p>
-            <p><img src='${body[x].profile.image_url}'</p>`);
+          $(".resultsGrid").append(
+            `<div>
+              <p>${body[x].profile.first_name} ${body[x].profile.last_name}</p>
+              <p><img src='${body[x].profile.image_url}'</p>
+              <p>${body[x].practices[0].visit_address.city}</p>
+              <p>${body[x].practices[0].visit_address.street}</p>
+              <p>${body[x].practices[0].visit_address.state}</p>
+              <p>${body[x].practices[0].visit_address.zip}</p>
+            </div>`
+          );
         }
 
       }
