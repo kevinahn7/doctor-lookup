@@ -17,8 +17,15 @@ $(document).ready(function() {
     promise.then(function(response) {
       let body = response.data;
       for (let x = 0; x < body.length; x++) {
-        $(".results").append(`<p>${body[x].profile.first_name} ${body[x].profile.last_name}</p><p><img src='${body[x].profile.image_url}'</p>`);
-        console.log(body[x].profile.first_name + " " + body[x].profile.last_name + " and they treat for " + condition + " and their website is " + body[x].practices[0].website);
+        if (body[x].practices[0].website) {
+          $(".results").append(`<p>${body[x].profile.first_name} ${body[x].profile.last_name}</p>
+            <p><img src='${body[x].profile.image_url}'</p>
+            <p><a href="${body[x].practices[0].website}" target="_blank">${body[x].practices[0].website}<a></p>`);
+        } else {
+          $(".results").append(`<p>${body[x].profile.first_name} ${body[x].profile.last_name}</p>
+            <p><img src='${body[x].profile.image_url}'</p>`);
+        }
+
       }
 
       // for(let i = 0; i < body.length; i++) {
