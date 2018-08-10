@@ -51,6 +51,8 @@ $(document).ready(function() {
       } else {
         $(".noResult").append("<p>There are no matching doctors with your input</p>");
       }
+    }, (error) => {
+      $(".noResult").text(`There was an error processing your request: ${error.message}`);
     });
   });
 

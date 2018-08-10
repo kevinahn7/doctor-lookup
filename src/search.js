@@ -1,5 +1,5 @@
 export class Search {
-  constructor(nameSearch, conditionSearch, location) {
+  constructor(nameSearch = "", conditionSearch = "", location) {
     this.nameSearch = nameSearch;
     this.conditionSearch = conditionSearch;
     this.location = location;
