@@ -1,5 +1,6 @@
 body {
   background-color: #fffff0;
+  font-family: 'Lato', sans-serif;
 }
 
 .resultsGrid {
@@ -11,4 +12,14 @@ body {
   border: 1px black solid;
   text-align: center;
   overflow: auto;
+  padding: 10px;
+}
+
+.theName {
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+img {
+  border-radius: 5%;
 }
