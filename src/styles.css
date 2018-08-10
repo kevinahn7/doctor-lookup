@@ -3,6 +3,10 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
+.findDoctors {
+  display: inline;
+}
+
 .resultsGrid {
   display: grid;
   grid-gap: 5px;
@@ -29,4 +33,9 @@ img {
 
 .practiceName {
   font-size: 1.3rem;
+}
+
+.clearAll {
+  float: right;
+  display: none;
 }

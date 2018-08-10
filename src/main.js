@@ -5,9 +5,15 @@ import './styles.css';
 import { Search } from './search.js';
 
 $(document).ready(function() {
+  $(".clearAll").click(function() {
+    $(".resultsGrid").text("");
+    $(".noResult").text("");
+    $(".clearAll").hide();
+  })
   $(".findDoctors").submit(function(e) {
     $(".resultsGrid").text("");
     $(".noResult").text("");
+    $(".clearAll").show();
     e.preventDefault();
     let name = $(".name").val();
     let condition = $(".condition").val();
