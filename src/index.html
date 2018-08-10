@@ -7,10 +7,16 @@
   <div class="container">
     <h1>Search for doctors</h1>
 
-    <form class="findDoctors">
-      <input class="name" placeholder="Doctor first or last name">
-      <input class="condition" placeholder="Condition or Sympton">
-      <button type="submit">Submit</button>
+    <form class="findDoctors form-inline">
+      <input class="name form-control" placeholder="Doctor's Name">
+      <input class="condition form-control" placeholder="Condition or Sympton">
+      <select class="location custom-select">
+        <option value="45.5122,-122.6587">Portland</option>
+        <option value="47.6062,-122.3321">Seattle</option>
+        <option value="34.0522,-118.2437">Los Angeles</option>
+        <option value="37.7749,-122.4194">San Francisco</option>
+      </selct>
+      <input type="submit" class="btn btn-success">
     </form>
 
     <div class="resultsGrid">

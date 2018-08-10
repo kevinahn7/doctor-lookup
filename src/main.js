@@ -11,7 +11,8 @@ $(document).ready(function() {
     e.preventDefault();
     let name = $(".name").val();
     let condition = $(".condition").val();
-    let AllDoctors = new Search(name, condition, "Portland");
+    let location = $(".location").val();
+    let AllDoctors = new Search(name, condition, location);
     let promise = AllDoctors.GetDoctors();
     promise.then(function(response) {
       let body = response.data;
