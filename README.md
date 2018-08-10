@@ -1,12 +1,12 @@
-# Project Title
+# Doctor Lookup
 
-#### Epicodus JavaScript exercise, Date
+#### Epicodus JavaScript project #2, 8/10/2018
 
-#### By Your Name Here
+#### By Kevin Ahn
 
 ## Description
 
-Add description here
+A web app to pull information about local doctors from an API using their name and/or your symptoms or condition.
 
 ## User Stories
 
@@ -48,10 +48,10 @@ Add description here
 
 ## Links
 
-* Add links here
+* [Github Repo] (https://github.com/kevinahn7/doctor-lookup)
 
 ## License
 
 This software is licensed under the MIT license.
 
-Copyright (c) 2018 **Your Name Here**
+Copyright (c) 2018 **Kevin Ahn**
